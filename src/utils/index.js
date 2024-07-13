@@ -41,12 +41,217 @@ import foto40 from "../assets/Gallery/img40.jpeg";
 import foto41 from "../assets/Gallery/img41.jpeg";
 import foto42 from "../assets/Gallery/img42.jpeg";
 
-const photos = [];
+const photos = [
+  {
+    title: "Photo 1",
+    description: "Description 1",
+    url: foto1,
+  },
+  {
+    title: "Photo 2",
+    description: "Description 2",
+    url: foto2,
+  },
+  {
+    title: "Photo 3",
+    description: "Description 3",
+    url: foto3,
+  },
+  {
+    title: "Photo 4",
+    description: "Description 4",
+    url: foto4,
+  },
+  {
+    title: "Photo 5",
+    description: "Description 5",
+    url: foto5,
+  },
+  {
+    title: "Photo 6",
+    description: "Description 6",
+    url: foto6,
+  },
+  {
+    title: "Photo 7",
+    description: "Description 7",
+    url: foto7,
+  },
+  {
+    title: "Photo 8",
+    description: "Description 8",
+    url: foto8,
+  },
+  {
+    title: "Photo 9",
+    description: "Description 9",
+    url: foto9,
+  },
+  {
+    title: "Photo 10",
+    description: "Description 10",
+    url: foto10,
+  },
+  {
+    title: "Photo 11",
+    description: "Description 11",
+    url: foto11,
+  },
+  {
+    title: "Photo 12",
+    description: "Description 12",
+    url: foto12,
+  },
+  {
+    title: "Photo 13",
+    description: "Description 13",
+    url: foto13,
+  },
+  {
+    title: "Photo 14",
+    description: "Description 14",
+    url: foto14,
+  },
+  {
+    title: "Photo 15",
+    description: "Description 15",
+    url: foto15,
+  },
+  {
+    title: "Photo 16",
+    description: "Description 16",
+    url: foto16,
+  },
+  {
+    title: "Photo 17",
+    description: "Description 17",
+    url: foto17,
+  },
+  {
+    title: "Photo 18",
+    description: "Description 18",
+    url: foto18,
+  },
+  {
+    title: "Photo 19",
+    description: "Description 19",
+    url: foto19,
+  },
+  {
+    title: "Photo 20",
+    description: "Description 20",
+    url: foto20,
+  },
+  {
+    title: "Photo 21",
+    description: "Description 21",
+    url: foto21,
+  },
+  {
+    title: "Photo 22",
+    description: "Description 22",
+    url: foto22,
+  },
+  {
+    title: "Photo 23",
+    description: "Description 23",
+    url: foto23,
+  },
+  {
+    title: "Photo 24",
+    description: "Description 24",
+    url: foto24,
+  },
+  {
+    title: "Photo 25",
+    description: "Description 25",
+    url: foto25,
+  },
+  {
+    title: "Photo 26",
+    description: "Description 26",
+    url: foto26,
+  },
+  {
+    title: "Photo 27",
+    description: "Description 27",
+    url: foto27,
+  },
+  {
+    title: "Photo 28",
+    description: "Description 28",
+    url: foto28,
+  },
+  {
+    title: "Photo 29",
+    description: "Description 29",
+    url: foto29,
+  },
+  {
+    title: "Photo 30",
+    description: "Description 30",
+    url: foto30,
+  },
+  {
+    title: "Photo 31",
+    description: "Description 31",
+    url: foto31,
+  },
+  {
+    title: "Photo 32",
+    description: "Description 32",
+    url: foto32,
+  },
+  {
+    title: "Photo 33",
+    description: "Description 33",
+    url: foto33,
+  },
+  {
+    title: "Photo 34",
+    description: "Description 34",
+    url: foto34,
+  },
+  {
+    title: "Photo 35",
+    description: "Description 35",
+    url: foto35,
+  },
+  {
+    title: "Photo 36",
+    description: "Description 36",
+    url: foto36,
+  },
+  {
+    title: "Photo 37",
+    description: "Description 37",
+    url: foto37,
+  },
+  {
+    title: "Photo 38",
+    description: "Description 38",
+    url: foto38,
+  },
+  {
+    title: "Photo 39",
+    description: "Description 39",
+    url: foto39,
+  },
+  {
+    title: "Photo 40",
+    description: "Description 40",
+    url: foto40,
+  },
+  {
+    title: "Photo 41",
+    description: "Description 41",
+    url: foto41,
+  },
+  {
+    title: "Photo 42",
+    description: "Description 42",
+    url: foto42,
+  },
+];
 
-for (let i = 1; i <= 42; i++) {
-  const title = `Photo ${i}`;
-  const description = `Description ${i}`;
-  const url = eval(`foto${i}`);
-  photos.push({ title, description, url });
-}
 export { photos };
