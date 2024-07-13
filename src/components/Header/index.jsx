@@ -15,6 +15,9 @@ export const Header = () => {
           <a href="#agenda">Agenda</a>
         </li>
         <li>
+          <a href="#galeria">Galeria</a>
+        </li>
+        <li>
           <a href="#contato">Contato</a>
         </li>
       </ul>

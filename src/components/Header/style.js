@@ -10,11 +10,12 @@ export const Container = styled.div`
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   background-color: rgba(0, 0, 0, 0.85);
   color: #ffff;
   justify-content: flex-end;
+  box-shadow: 10px 10px 5px -7px rgba(0, 0, 0, 0.75);
 
   > ul {
     max-width: 1100px;

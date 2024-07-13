@@ -8,11 +8,7 @@ const FooterContainer = styled.footer`
   padding: 20px;
   text-align: center;
   width: 100%;
-  height: 10vh;
-  position: fixed;
   bottom: 0;
-  transition: transform 0.3s ease-out;
-  transform: translateY(${(props) => (props.isVisible ? "100%" : "0")});
 `;
 
 const ContactSection = styled.div`
@@ -36,32 +32,8 @@ const CopyrightSection = styled.div`
 `;
 
 const Footer = () => {
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-
-      if (currentScrollTop > lastScrollTop) {
-        setIsVisible(false);
-      } else {
-        setIsVisible(true);
-      }
-
-      setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollTop]);
-
   return (
-    <FooterContainer isVisible={isVisible}>
+    <FooterContainer>
       <ContactSection>
         <ContactIcon>
           <MailOutlined />

@@ -12,6 +12,7 @@ import img3 from "./assets/carrossel/3.jpg";
 import img4 from "./assets/carrossel/4.jpg";
 import EventAgenda from "./components/eventAgenda";
 import Footer from "./components/footer";
+import PhotoGallery from "./components/Gallery";
 
 function App() {
   const settings = {
@@ -22,10 +23,26 @@ function App() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 780,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
-    <>
+    <div className="ContainerAll">
       <div className="container-content">
         <Header />
         <div className="background-image" id="home"></div>
@@ -35,10 +52,10 @@ function App() {
           <div>
             <section className="sobre" id="sobre">
               <img src={logo} alt="Logo" />
-              <p>
+              <h2 className="slogan">
                 Aqui o sistema é bruto rústico e sistemático! A maior equipe da
                 região.
-              </p>
+              </h2>
               <section className="carrossel">
                 <Slider {...settings}>
                   <div className="content-carrossel">
@@ -60,25 +77,32 @@ function App() {
           <div className="content-sobre">
             <h1>Sobre</h1>
             <section className="text-sobre">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean a
-              lobortis lorem. Vestibulum eu augue tempor, sagittis ipsum eget,
-              dignissim felis. Nam vulputate tellus sed arcu egestas, sit amet
-              rhoncus est cursus. Ut maximus arcu gravida ligula venenatis, eu
-              pellentesque magna tempus. Integer malesuada suscipit sapien ac
-              vulputate. Donec a luctus odio, eget rhoncus metus. Morbi a
-              euismod purus. Duis hendrerit facilisis tellus, id venenatis massa
-              varius sed. Phasellus feugiat molestie velit sed posuere. Fusce
-              mattis et mi id pulvinar.
+              Originário da charmosa cidade de Mar de Espanha, situada no
+              coração de Minas Gerais, nosso movimento foi fundado por Fábio de
+              Paula, um jovem de 28 anos apaixonado pela vida no campo e pelos
+              animais. Com raízes profundamente fincadas na cultura rural, Fábio
+              transformou sua paixão em um movimento vibrante que celebra as
+              tradições e a beleza da vida na roça. Nosso foco principal é
+              organizar cavalgadas e encontros de cavaleiros e amazonas,
+              promovendo momentos de confraternização, amizade e conexão com a
+              natureza. Cada evento é uma oportunidade única para experimentar a
+              liberdade das cavalgadas, compartilhar histórias e fortalecer os
+              laços comunitários. Junte-se a nós e faça parte desta jornada,
+              onde a tradição e a modernidade se encontram em harmonia, criando
+              memórias inesquecíveis e celebrando a cultura rural brasileira.
             </section>
+          </div>
+          <div id="galeria">
+            <PhotoGallery />
           </div>
           <div id="agenda">
             <h2>Próximos Eventos</h2>
             <EventAgenda />
           </div>
         </main>
-        <Footer />
       </div>
-    </>
+      <Footer />
+    </div>
   );
 }
 

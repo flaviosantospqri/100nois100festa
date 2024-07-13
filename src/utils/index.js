@@ -1,0 +1,52 @@
+import foto1 from "../assets/Gallery/img1.jpeg";
+import foto2 from "../assets/Gallery/img2.jpeg";
+import foto3 from "../assets/Gallery/img3.jpeg";
+import foto4 from "../assets/Gallery/img4.jpeg";
+import foto5 from "../assets/Gallery/img5.jpeg";
+import foto6 from "../assets/Gallery/img6.jpeg";
+import foto7 from "../assets/Gallery/img7.jpeg";
+import foto8 from "../assets/Gallery/img8.jpeg";
+import foto9 from "../assets/Gallery/img9.jpeg";
+import foto10 from "../assets/Gallery/img10.jpeg";
+import foto11 from "../assets/Gallery/img11.jpeg";
+import foto12 from "../assets/Gallery/img12.jpeg";
+import foto13 from "../assets/Gallery/img13.jpeg";
+import foto14 from "../assets/Gallery/img14.jpeg";
+import foto15 from "../assets/Gallery/img15.jpeg";
+import foto16 from "../assets/Gallery/img16.jpeg";
+import foto17 from "../assets/Gallery/img17.jpeg";
+import foto18 from "../assets/Gallery/img18.jpeg";
+import foto19 from "../assets/Gallery/img19.jpeg";
+import foto20 from "../assets/Gallery/img20.jpeg";
+import foto21 from "../assets/Gallery/img21.jpeg";
+import foto22 from "../assets/Gallery/img22.jpeg";
+import foto23 from "../assets/Gallery/img23.jpeg";
+import foto24 from "../assets/Gallery/img24.jpeg";
+import foto25 from "../assets/Gallery/img25.jpeg";
+import foto26 from "../assets/Gallery/img26.jpeg";
+import foto27 from "../assets/Gallery/img27.jpeg";
+import foto28 from "../assets/Gallery/img28.jpeg";
+import foto29 from "../assets/Gallery/img29.jpeg";
+import foto30 from "../assets/Gallery/img30.jpeg";
+import foto31 from "../assets/Gallery/img31.jpeg";
+import foto32 from "../assets/Gallery/img32.jpeg";
+import foto33 from "../assets/Gallery/img33.jpeg";
+import foto34 from "../assets/Gallery/img34.jpeg";
+import foto35 from "../assets/Gallery/img35.jpeg";
+import foto36 from "../assets/Gallery/img36.jpeg";
+import foto37 from "../assets/Gallery/img37.jpeg";
+import foto38 from "../assets/Gallery/img38.jpeg";
+import foto39 from "../assets/Gallery/img39.jpeg";
+import foto40 from "../assets/Gallery/img40.jpeg";
+import foto41 from "../assets/Gallery/img41.jpeg";
+import foto42 from "../assets/Gallery/img42.jpeg";
+
+const photos = [];
+
+for (let i = 1; i <= 42; i++) {
+  const title = `Photo ${i}`;
+  const description = `Description ${i}`;
+  const url = eval(`foto${i}`);
+  photos.push({ title, description, url });
+}
+export { photos };
